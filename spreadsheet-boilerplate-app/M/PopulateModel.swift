@@ -1,4 +1,4 @@
-import UIKit // LoadModel.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
+import UIKit // PopulateModel.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 extension CollectionVC {
     

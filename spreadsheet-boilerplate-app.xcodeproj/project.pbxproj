@@ -184,9 +184,9 @@
 		06F0AE6525C126590064D947 /* AddData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F0ADC725C126580064D947 /* AddData.swift */; };
 		06F0AE6625C126590064D947 /* AddData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F0ADC725C126580064D947 /* AddData.swift */; };
 		06F0AE6725C126590064D947 /* AddData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F0ADC725C126580064D947 /* AddData.swift */; };
-		06F0AE6825C126590064D947 /* LoadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F0ADC825C126580064D947 /* LoadModel.swift */; };
-		06F0AE6925C126590064D947 /* LoadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F0ADC825C126580064D947 /* LoadModel.swift */; };
-		06F0AE6A25C126590064D947 /* LoadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F0ADC825C126580064D947 /* LoadModel.swift */; };
+		06F0AE6825C126590064D947 /* PopulateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F0ADC825C126580064D947 /* PopulateModel.swift */; };
+		06F0AE6925C126590064D947 /* PopulateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F0ADC825C126580064D947 /* PopulateModel.swift */; };
+		06F0AE6A25C126590064D947 /* PopulateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F0ADC825C126580064D947 /* PopulateModel.swift */; };
 		06F0AE6B25C126590064D947 /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F0ADC925C126580064D947 /* SaveData.swift */; };
 		06F0AE6C25C126590064D947 /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F0ADC925C126580064D947 /* SaveData.swift */; };
 		06F0AE6D25C126590064D947 /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F0ADC925C126580064D947 /* SaveData.swift */; };
@@ -293,7 +293,7 @@
 		06F0ADC425C126580064D947 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		06F0ADC525C126580064D947 /* Prepare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prepare.swift; sourceTree = "<group>"; };
 		06F0ADC725C126580064D947 /* AddData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddData.swift; sourceTree = "<group>"; };
-		06F0ADC825C126580064D947 /* LoadModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadModel.swift; sourceTree = "<group>"; };
+		06F0ADC825C126580064D947 /* PopulateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopulateModel.swift; sourceTree = "<group>"; };
 		06F0ADC925C126580064D947 /* SaveData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
 		06F0ADCA25C126580064D947 /* LoadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadData.swift; sourceTree = "<group>"; };
 		06F0ADCB25C126580064D947 /* CellOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellOrder.swift; sourceTree = "<group>"; };
@@ -353,13 +353,13 @@
 			isa = PBXGroup;
 			children = (
 				06F0AD6A25C125F70064D947 /* Core */,
-				06F0AD9225C126580064D947 /* C */,
-				06F0AD8925C126580064D947 /* Checks */,
-				06F0AD8D25C126580064D947 /* Dates */,
+				06F0ADB125C126580064D947 /* VCs */,
 				06F0ADBD25C126580064D947 /* Layout */,
 				06F0ADC625C126580064D947 /* M */,
 				06F0ADB725C126580064D947 /* V */,
-				06F0ADB125C126580064D947 /* VCs */,
+				06F0AD9225C126580064D947 /* C */,
+				06F0AD8D25C126580064D947 /* Dates */,
+				06F0AD8925C126580064D947 /* Checks */,
 				06F0AD3B25C118520064D947 /* Info.plist */,
 			);
 			path = "spreadsheet-boilerplate-app";
@@ -419,10 +419,10 @@
 		06F0AD8D25C126580064D947 /* Dates */ = {
 			isa = PBXGroup;
 			children = (
-				06F0AD8E25C126580064D947 /* FormatDate.swift */,
-				06F0AD8F25C126580064D947 /* DateSaving.swift */,
 				06F0AD9025C126580064D947 /* Dates.swift */,
+				06F0AD8E25C126580064D947 /* FormatDate.swift */,
 				06F0AD9125C126580064D947 /* DateStrings.swift */,
+				06F0AD8F25C126580064D947 /* DateSaving.swift */,
 			);
 			path = Dates;
 			sourceTree = "<group>";
@@ -430,12 +430,16 @@
 		06F0AD9225C126580064D947 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				06F0ADAF25C126580064D947 /* CollectionVC.swift */,
+				06F0ADAC25C126580064D947 /* VCLifecycle.swift */,
+				06F0ADAE25C126580064D947 /* ReturnCell.swift */,
+				06F0ADAD25C126580064D947 /* RCellSetup.swift */,
 				06F0AD9325C126580064D947 /* PopupMenuVC.swift */,
-				06F0AD9425C126580064D947 /* ui */,
-				06F0AD9C25C126580064D947 /* navbar */,
-				06F0ADA025C126580064D947 /* cell */,
-				06F0ADA525C126580064D947 /* c-main */,
 				06F0ADB025C126580064D947 /* Reload.swift */,
+				06F0AD9C25C126580064D947 /* navbar */,
+				06F0AD9425C126580064D947 /* ui */,
+				06F0ADA025C126580064D947 /* cell */,
+				06F0ADA625C126580064D947 /* center-cell-setup */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -443,13 +447,13 @@
 		06F0AD9425C126580064D947 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				06F0AD9525C126580064D947 /* SizeNotifications.swift */,
-				06F0AD9625C126580064D947 /* TFReturn.swift */,
 				06F0AD9725C126580064D947 /* Tap.swift */,
-				06F0AD9825C126580064D947 /* UIMode.swift */,
-				06F0AD9925C126580064D947 /* TextField.swift */,
 				06F0AD9A25C126580064D947 /* Keyboard.swift */,
+				06F0AD9925C126580064D947 /* TextField.swift */,
 				06F0AD9B25C126580064D947 /* TFSetup.swift */,
+				06F0AD9625C126580064D947 /* TFReturn.swift */,
+				06F0AD9825C126580064D947 /* UIMode.swift */,
+				06F0AD9525C126580064D947 /* SizeNotifications.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -457,9 +461,9 @@
 		06F0AD9C25C126580064D947 /* navbar */ = {
 			isa = PBXGroup;
 			children = (
-				06F0AD9D25C126580064D947 /* NavTitle.swift */,
-				06F0AD9E25C126580064D947 /* NavButtons.swift */,
 				06F0AD9F25C126580064D947 /* NavBar.swift */,
+				06F0AD9E25C126580064D947 /* NavButtons.swift */,
+				06F0AD9D25C126580064D947 /* NavTitle.swift */,
 			);
 			path = navbar;
 			sourceTree = "<group>";
@@ -467,34 +471,22 @@
 		06F0ADA025C126580064D947 /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				06F0ADA125C126580064D947 /* CenterCell.swift */,
-				06F0ADA225C126580064D947 /* LeftCell.swift */,
 				06F0ADA325C126580064D947 /* BaseCell.swift */,
+				06F0ADA225C126580064D947 /* LeftCell.swift */,
 				06F0ADA425C126580064D947 /* RightCell.swift */,
+				06F0ADA125C126580064D947 /* CenterCell.swift */,
 			);
 			path = cell;
-			sourceTree = "<group>";
-		};
-		06F0ADA525C126580064D947 /* c-main */ = {
-			isa = PBXGroup;
-			children = (
-				06F0ADA625C126580064D947 /* center-cell-setup */,
-				06F0ADAC25C126580064D947 /* VCLifecycle.swift */,
-				06F0ADAD25C126580064D947 /* RCellSetup.swift */,
-				06F0ADAE25C126580064D947 /* ReturnCell.swift */,
-				06F0ADAF25C126580064D947 /* CollectionVC.swift */,
-			);
-			path = "c-main";
 			sourceTree = "<group>";
 		};
 		06F0ADA625C126580064D947 /* center-cell-setup */ = {
 			isa = PBXGroup;
 			children = (
-				06F0ADA725C126580064D947 /* CalculateValues.swift */,
-				06F0ADA825C126580064D947 /* InputContent.swift */,
-				06F0ADA925C126580064D947 /* CellLookup.swift */,
 				06F0ADAA25C126580064D947 /* CtrCellSetup.swift */,
 				06F0ADAB25C126580064D947 /* SetCellText.swift */,
+				06F0ADA825C126580064D947 /* InputContent.swift */,
+				06F0ADA725C126580064D947 /* CalculateValues.swift */,
+				06F0ADA925C126580064D947 /* CellLookup.swift */,
 			);
 			path = "center-cell-setup";
 			sourceTree = "<group>";
@@ -504,8 +496,8 @@
 			children = (
 				06F0ADB225C126580064D947 /* VCs.swift */,
 				06F0ADB325C126580064D947 /* VCs_II.swift */,
-				06F0ADB425C126580064D947 /* SetTopVC.swift */,
 				06F0ADB525C126580064D947 /* VCs_III.swift */,
+				06F0ADB425C126580064D947 /* SetTopVC.swift */,
 				06F0ADB625C126580064D947 /* GoToVC.swift */,
 			);
 			path = VCs;
@@ -526,13 +518,13 @@
 		06F0ADBD25C126580064D947 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				06F0ADBE25C126580064D947 /* ResetSizes.swift */,
-				06F0ADBF25C126580064D947 /* Sizes.swift */,
-				06F0ADC025C126580064D947 /* BarSizes.swift */,
+				06F0ADC425C126580064D947 /* Layout.swift */,
 				06F0ADC125C126580064D947 /* Attributes.swift */,
+				06F0ADBF25C126580064D947 /* Sizes.swift */,
+				06F0ADBE25C126580064D947 /* ResetSizes.swift */,
+				06F0ADC025C126580064D947 /* BarSizes.swift */,
 				06F0ADC225C126580064D947 /* SizeEnums.swift */,
 				06F0ADC325C126580064D947 /* ZIndex.swift */,
-				06F0ADC425C126580064D947 /* Layout.swift */,
 				06F0ADC525C126580064D947 /* Prepare.swift */,
 			);
 			path = Layout;
@@ -541,14 +533,14 @@
 		06F0ADC625C126580064D947 /* M */ = {
 			isa = PBXGroup;
 			children = (
-				06F0ADC725C126580064D947 /* AddData.swift */,
-				06F0ADC825C126580064D947 /* LoadModel.swift */,
 				06F0ADC925C126580064D947 /* SaveData.swift */,
 				06F0ADCA25C126580064D947 /* LoadData.swift */,
-				06F0ADCB25C126580064D947 /* CellOrder.swift */,
+				06F0ADC825C126580064D947 /* PopulateModel.swift */,
+				06F0ADC725C126580064D947 /* AddData.swift */,
 				06F0ADCC25C126580064D947 /* SortData.swift */,
-				06F0ADCD25C126580064D947 /* Keychain.swift */,
+				06F0ADCB25C126580064D947 /* CellOrder.swift */,
 				06F0ADCE25C126580064D947 /* CellStruct.swift */,
+				06F0ADCD25C126580064D947 /* Keychain.swift */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -730,7 +722,7 @@
 				06F0AE7425C126590064D947 /* SortData.swift in Sources */,
 				06F0ADCF25C126590064D947 /* TestSquare.swift in Sources */,
 				06F0AE5025C126590064D947 /* Sizes.swift in Sources */,
-				06F0AE6825C126590064D947 /* LoadModel.swift in Sources */,
+				06F0AE6825C126590064D947 /* PopulateModel.swift in Sources */,
 				06F0AE1125C126590064D947 /* CalculateValues.swift in Sources */,
 				06F0AD7725C125F70064D947 /* AppLifecycle.swift in Sources */,
 				06F0ADDE25C126590064D947 /* Dates.swift in Sources */,
@@ -802,7 +794,7 @@
 				06F0AE7525C126590064D947 /* SortData.swift in Sources */,
 				06F0ADD025C126590064D947 /* TestSquare.swift in Sources */,
 				06F0AE5125C126590064D947 /* Sizes.swift in Sources */,
-				06F0AE6925C126590064D947 /* LoadModel.swift in Sources */,
+				06F0AE6925C126590064D947 /* PopulateModel.swift in Sources */,
 				06F0AE1225C126590064D947 /* CalculateValues.swift in Sources */,
 				06F0AD7825C125F70064D947 /* AppLifecycle.swift in Sources */,
 				06F0ADDF25C126590064D947 /* Dates.swift in Sources */,
@@ -874,7 +866,7 @@
 				06F0AE7625C126590064D947 /* SortData.swift in Sources */,
 				06F0ADD125C126590064D947 /* TestSquare.swift in Sources */,
 				06F0AE5225C126590064D947 /* Sizes.swift in Sources */,
-				06F0AE6A25C126590064D947 /* LoadModel.swift in Sources */,
+				06F0AE6A25C126590064D947 /* PopulateModel.swift in Sources */,
 				06F0AE1325C126590064D947 /* CalculateValues.swift in Sources */,
 				06F0AD7925C125F70064D947 /* AppLifecycle.swift in Sources */,
 				06F0ADE025C126590064D947 /* Dates.swift in Sources */,
