@@ -27,7 +27,7 @@ extension CustomFlowLayout {
             topVC.rePresentTextField()
         }
         
-        drawTestSquare()  /// for verifying dynamic calculation of navbar height + status bar height, and thus, cell heights
+        //drawTestSquare()  /// for verifying dynamic calculation of navbar height + status bar height, and thus, cell heights
     }
     
 }
