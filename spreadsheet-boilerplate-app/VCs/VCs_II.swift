@@ -1,6 +1,6 @@
 import UIKit // VCs_II.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
-var debtVCLayout =
+var secondLayout =
     CustomFlowLayout(
         embeddedInNavController: true,
         customFrame: nil,
@@ -12,13 +12,13 @@ var debtVCLayout =
         squareCellMode: .noAutoSquare,
         loadsHorizontally: false)
 
-var debtVC = CollectionVC(.secondVCType, backgroundColor: globalWindow.backgroundColor!,
-                                      buttonColorIndex: 0, collectionViewLayout: debtVCLayout)
+var secondVC = CollectionVC(.secondVCType, backgroundColor: globalWindow.backgroundColor!,
+                                      buttonColorIndex: 0, collectionViewLayout: secondLayout)
 
 enum CollectionViewType: Int {
     
     case initial = 0
-    case firstVCType, secondVCType  // give these names soon, these case names are for spreadsheet-boilerplate codebase
+    case firstVCType, secondVCType
     
     func simpleDescription() -> String {
         

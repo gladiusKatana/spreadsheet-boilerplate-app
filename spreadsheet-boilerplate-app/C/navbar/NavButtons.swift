@@ -27,7 +27,7 @@ extension CollectionVC {
     
     @objc func buttonWrapperMethodforSecondVC() {
         DispatchQueue.main.asyncAfter(deadline: .now()) {
-            self.gotoView(vc: debtVC)
+            self.gotoView(vc: secondVC)
         }
     }
     
