@@ -1,4 +1,4 @@
-import UIKit // VCs.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // VCs.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 //           //*VC = view controller
 

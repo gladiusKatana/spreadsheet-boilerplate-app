@@ -1,4 +1,4 @@
-import UIKit // Layout.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // Layout.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 class CustomFlowLayout : UICollectionViewFlowLayout {
     var customFrame: CGRect?;               var cols = 0;   var rows = 0

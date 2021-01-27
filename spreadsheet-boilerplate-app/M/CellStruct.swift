@@ -1,4 +1,4 @@
-import UIKit // CellStruct.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // CellStruct.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 
 struct CellStruct<T: Hashable, U: Hashable>: Hashable {

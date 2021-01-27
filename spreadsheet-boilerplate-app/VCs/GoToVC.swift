@@ -1,4 +1,4 @@
-import UIKit // GoToVC.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // GoToVC.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 extension CollectionVC {
     

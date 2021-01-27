@@ -1,4 +1,4 @@
-import UIKit // DataVars.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // DataVars.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 var dataAtIndexPath = Dictionary<CellStruct<Int,Int>,[String]>() /// Dictionary keyed by 2-tuple (index path)
 

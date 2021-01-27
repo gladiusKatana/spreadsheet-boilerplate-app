@@ -1,4 +1,4 @@
-import UIKit // ReturnCell.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // ReturnCell.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 extension CollectionVC {
     

@@ -1,4 +1,4 @@
-import UIKit // RCellSetup.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // RCellSetup.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 func rightCellSetup(_ cell: RightAlignedCell, indexPath: IndexPath, layout: CustomFlowLayout) -> RightAlignedCell  {
     

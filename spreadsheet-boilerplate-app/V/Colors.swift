@@ -1,4 +1,4 @@
-import UIKit // Colors.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // Colors.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 var headerColor = UIColor.darkGray
 

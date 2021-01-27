@@ -1,4 +1,4 @@
-import UIKit // PopupMenuVC.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // PopupMenuVC.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 class PopupMenuVC: UICollectionViewController, UIGestureRecognizerDelegate {
     var customFlowLayout : CustomFlowLayout?

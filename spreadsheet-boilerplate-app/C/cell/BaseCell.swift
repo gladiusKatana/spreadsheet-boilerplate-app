@@ -1,4 +1,4 @@
-import UIKit // BaseCell.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // BaseCell.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 class BaseCell: UICollectionViewCell {
     

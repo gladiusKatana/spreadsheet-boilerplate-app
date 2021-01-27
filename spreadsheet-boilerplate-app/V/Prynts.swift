@@ -1,4 +1,4 @@
-import UIKit // Prynts.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // Prynts.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 func pryntDataTabularized() {    /// spelling 'prynt' with a y so this function's existence won't hijack Xcode autocomplete priority for print statements
     print("")

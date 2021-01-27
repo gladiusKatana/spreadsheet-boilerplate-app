@@ -1,4 +1,4 @@
-import UIKit // Keychain.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // Keychain.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 import SwiftKeychainWrapper
 
 func setKeychainKeys(_ inputVar: Any, forKey keyString: String) {   //print("setting keychain keys")

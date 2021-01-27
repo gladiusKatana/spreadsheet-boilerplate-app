@@ -1,4 +1,4 @@
-import UIKit // Vars.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // Vars.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 var globalWindow = UIWindow(frame: UIScreen.main.bounds)
 ///var sceneDelegate = SceneDelegate() //not (currently) using multiple windows on iPad or scene-view modal vc presentations

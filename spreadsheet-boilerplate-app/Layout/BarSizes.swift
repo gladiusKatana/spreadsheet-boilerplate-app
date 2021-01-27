@@ -1,4 +1,4 @@
-import UIKit // BarSizes.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // BarSizes.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 extension CustomFlowLayout {
     

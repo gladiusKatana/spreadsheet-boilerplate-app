@@ -1,4 +1,4 @@
-import UIKit // Dates.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // Dates.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 func makeDateFrom(year: Int, month: Int, day: Int, hr: Int, min: Int, sec: Int) -> Date {
     let calendar = Calendar(identifier: .gregorian)

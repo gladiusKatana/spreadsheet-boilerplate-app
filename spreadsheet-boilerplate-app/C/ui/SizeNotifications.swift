@@ -1,4 +1,4 @@
-import UIKit // SizeNotifications.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // SizeNotifications.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 import NotificationCenter
 
 extension CollectionVC {

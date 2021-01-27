@@ -1,4 +1,4 @@
-import UIKit // CollectionVC.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // CollectionVC.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 class CollectionVC: UICollectionViewController, UITextFieldDelegate, UIGestureRecognizerDelegate {
     

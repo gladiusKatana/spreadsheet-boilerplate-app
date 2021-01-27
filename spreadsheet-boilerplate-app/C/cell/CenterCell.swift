@@ -1,4 +1,4 @@
-import UIKit // CenterCell.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // CenterCell.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 class CenterAlignedCell: BaseCell {
     

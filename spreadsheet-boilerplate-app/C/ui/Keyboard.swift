@@ -1,4 +1,4 @@
-import UIKit // Keyboard.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // Keyboard.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 func resetKeyboardHeight() {
     if keyboardSizeFindingMode { /// for determining device's screen sizes empirically (since values seem not to be anywhere online... see comments in Vars.swift) :

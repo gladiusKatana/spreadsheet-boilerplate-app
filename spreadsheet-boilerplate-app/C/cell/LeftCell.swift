@@ -1,4 +1,4 @@
-//import UIKit // LeftCell.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+//import UIKit // LeftCell.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 //
 //class LeftAlignedCell: BaseCell {
 //

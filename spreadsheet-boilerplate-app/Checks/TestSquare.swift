@@ -1,4 +1,4 @@
-import UIKit // TestSquare.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // TestSquare.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 
 func drawTestSquare() { /// for testing purposes only: to verify dynamic calculation of navbar height + status bar height, and thus, cell heights

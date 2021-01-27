@@ -1,4 +1,4 @@
-import UIKit // DateStrings.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // DateStrings.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 func getChosenDateComponents(_ inputDate: Date, roundedDown: Bool)
 

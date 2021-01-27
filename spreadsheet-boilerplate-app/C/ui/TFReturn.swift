@@ -1,4 +1,4 @@
-import UIKit // TFReturn.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // TFReturn.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 //           //*TF = text field
 

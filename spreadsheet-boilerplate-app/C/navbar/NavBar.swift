@@ -1,4 +1,4 @@
-import UIKit // NavBar.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // NavBar.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 extension CollectionVC {
     

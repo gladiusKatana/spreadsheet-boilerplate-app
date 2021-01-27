@@ -1,4 +1,4 @@
-import UIKit // Sizes.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // Sizes.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 extension CustomFlowLayout {
     override var collectionViewContentSize: CGSize {                            //print("size = \(contentSize)")

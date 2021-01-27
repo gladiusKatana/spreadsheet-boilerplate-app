@@ -1,4 +1,4 @@
-import UIKit // RightCell.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // RightCell.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 class RightAlignedCell: BaseCell {
     

@@ -1,4 +1,4 @@
-import UIKit // VCs_III.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // VCs_III.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 let w = 150
 

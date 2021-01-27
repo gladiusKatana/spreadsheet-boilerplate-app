@@ -1,4 +1,4 @@
-import UIKit // FormatDate.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // FormatDate.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 func formattedDateString(_ date: Date, roundDown: Bool, showYear: Bool, prefix: String?, suffix: String, dateFormat: CustomDateFormat) -> String { // * probably will remove some of this method at some point (ie enum cases)
     

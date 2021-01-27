@@ -1,4 +1,4 @@
-import UIKit // VCs_II.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // VCs_II.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 var debtVCLayout =
     CustomFlowLayout(

@@ -1,4 +1,4 @@
-import UIKit // TimeVars.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // TimeVars.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 
 var lastLoginDate = Date()

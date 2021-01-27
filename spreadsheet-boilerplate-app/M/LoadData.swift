@@ -1,4 +1,4 @@
-import UIKit // LoadData.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // LoadData.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 import SwiftKeychainWrapper
 
 extension CollectionVC {

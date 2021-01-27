@@ -1,4 +1,4 @@
-import UIKit // AppDelegate.swift    ･     MoneyBee     ･     created by Garth Snyder
+import UIKit // AppDelegate.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 @UIApplicationMain class AppDelegate: UIResponder, UIApplicationDelegate {
     

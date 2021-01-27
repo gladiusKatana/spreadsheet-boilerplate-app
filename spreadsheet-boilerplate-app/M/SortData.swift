@@ -1,4 +1,4 @@
-import UIKit // SortData.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // SortData.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 extension CollectionVC {
     

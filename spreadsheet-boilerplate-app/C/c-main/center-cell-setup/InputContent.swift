@@ -1,4 +1,4 @@
-import UIKit // InputContent.swift    ･     Runway     ･     created by Garth Snyder
+import UIKit // InputContent.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 extension CollectionVC {
     

@@ -1,4 +1,4 @@
-import UIKit // DeviceType.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // DeviceType.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 /*
  Extension created by Stack Overflow User HAS:

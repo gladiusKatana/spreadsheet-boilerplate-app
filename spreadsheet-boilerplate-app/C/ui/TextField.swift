@@ -1,4 +1,4 @@
-import UIKit // TextField.swift    ･     spreadsheet-boilerplate     ･     created by Garth Snyder
+import UIKit // TextField.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 extension CollectionVC {
     
