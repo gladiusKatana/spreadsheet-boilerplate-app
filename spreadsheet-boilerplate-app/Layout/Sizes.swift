@@ -2,8 +2,9 @@ import UIKit // Sizes.swift    ･     spreadsheet-boilerplate-app     ･     c
 
 extension CustomFlowLayout {
     override var collectionViewContentSize: CGSize {                            //print("size = \(contentSize)")
+        let autoFitHeightOffset = [.heightHardcoded, .widthAndHeightHardcoded].contains(cellDimensionsMode) ? 0 : 33
         let w = CGFloat(cols) * widthPlusSpace
-        let h = CGFloat(rows) * heightPlusSpace - 33 // without - 33, iPhone 12 series devices' height (h) is 33 points too large
+        let h = CGFloat(rows) * heightPlusSpace - CGFloat(autoFitHeightOffset)  /// offset for (e.g.) iPhone 12 series; only needed w/ auto-fitted heights
         return CGSize(width: w, height: h)
     }
     
