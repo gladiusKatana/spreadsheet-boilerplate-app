@@ -12,9 +12,7 @@ extension CollectionVC {
         
         setCellColors(cell, layout: layout, row: row, column: column, headerRows: headerRows, headerColumns: headerColumns)
         
-        if viewControllerType == .firstVCType {
-            setCellText(cell, layout: layout, row: row, column: column, headerRows: headerRows, headerColumns: headerColumns)
-        }
+        setCellText(cell, layout: layout, row: row, column: column, headerRows: headerRows, headerColumns: headerColumns)
         
         return cell
     }

@@ -7,23 +7,26 @@ extension CollectionVC {
         
         if row < headerRows || column < headerColumns {/// if cell is a header (header = column or row depending on view controller global var settings)
             
-            //cell.titleLabel.text = "\(column),\(row)"
             cell.titleLabel.textColor = headerTextColor
             
             if row == headerRows - 1 {
                 cell.titleLabel.text = column < headerTitles.count ? headerTitles[column] : ""
             }
-            
             if row >= headerRows && column == 0 {
                 setCellMonthString(cell, row: row)
             }
+            
         } else {
             if populateStockCellData {
-                if columnsForDataEntry.contains(column) {
-                    setContentsBasedOnInput(cell, row: row, column: column)
-                }
-                if columnsForValuesCalculated.contains(column) {                //print("should calculate cell \(column),\(row)")
-                    calculateValues(cell, row: row, column: column)
+                if viewControllerType == .firstVCType {
+                    if columnsForDataEntry.contains(column) {
+                        setContentsBasedOnInput(cell, row: row, column: column)
+                    }
+                    if columnsForValuesCalculated.contains(column) {    //print("should calculate cell at \(column),\(row)")
+                        calculateValues(cell, row: row, column: column)
+                    }
+                } else {
+                    cell.titleLabel.text = "\(column),\(row)"
                 }
             }
         }
