@@ -436,15 +436,15 @@
 				06F0ADAD25C126580064D947 /* RCellSetup.swift */,
 				06F0AD9325C126580064D947 /* PopupMenuVC.swift */,
 				06F0ADB025C126580064D947 /* Reload.swift */,
-				06F0AD9C25C126580064D947 /* navbar */,
-				06F0AD9425C126580064D947 /* ui */,
 				06F0ADA025C126580064D947 /* cell */,
 				06F0ADA625C126580064D947 /* center-cell-setup */,
+				06F0AD9C25C126580064D947 /* navbar */,
+				06F0AD9425C126580064D947 /* user-input */,
 			);
 			path = C;
 			sourceTree = "<group>";
 		};
-		06F0AD9425C126580064D947 /* ui */ = {
+		06F0AD9425C126580064D947 /* user-input */ = {
 			isa = PBXGroup;
 			children = (
 				06F0AD9725C126580064D947 /* Tap.swift */,
@@ -455,7 +455,7 @@
 				06F0AD9825C126580064D947 /* UIMode.swift */,
 				06F0AD9525C126580064D947 /* SizeNotifications.swift */,
 			);
-			path = ui;
+			path = "user-input";
 			sourceTree = "<group>";
 		};
 		06F0AD9C25C126580064D947 /* navbar */ = {
