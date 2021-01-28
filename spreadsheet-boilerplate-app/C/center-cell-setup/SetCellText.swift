@@ -17,15 +17,14 @@ extension CollectionVC {
             if row >= headerRows && column == 0 {
                 setCellMonthString(cell, row: row)
             }
-            
         } else {
-            
-            if columnsForDataEntry.contains(column) {
-                setContentsBasedOnInput(cell, row: row, column: column)
-            }
-            
-            if columnsForValuesCalculated.contains(column) {                //print("should calculate cell \(column),\(row)")
-                calculateValues(cell, row: row, column: column)
+            if populateStockCellData {
+                if columnsForDataEntry.contains(column) {
+                    setContentsBasedOnInput(cell, row: row, column: column)
+                }
+                if columnsForValuesCalculated.contains(column) {                //print("should calculate cell \(column),\(row)")
+                    calculateValues(cell, row: row, column: column)
+                }
             }
         }
     }

@@ -4,7 +4,7 @@ import UIKit // VCs.swift    ･     spreadsheet-boilerplate-app     ･     cre
 
 var backgroundVC = UIViewController()
 
-var topVC = CollectionVC(.initial, backgroundColor: UIColor.clear,
+var topVC = CollectionVC(.initial, populateStockCellData: false, backgroundColor: UIColor.clear,
                          buttonColorIndex: nil, collectionViewLayout: incomeAndExpensesVCLayout)
 
 var headerHeightFactor = CGFloat(1)     /// height-factors determine relative heights of header cells vs regular cells (see Attributes.swift)
@@ -28,7 +28,7 @@ var incomeAndExpensesVCLayout =
         squareCellMode: .noAutoSquare,      ///  optional auto-scaling to make cells square, by specifying 1 dimension only (cellWidth or cellHeight)
         loadsHorizontally: false)           ///❗️if loadsHorizontally is true, 'rows' look like columns & vice versa (table is transposed)
 
-var incomeAndExpensesVC = CollectionVC(.firstVCType, backgroundColor: globalWindow.backgroundColor!,
+var incomeAndExpensesVC = CollectionVC(.firstVCType, populateStockCellData: true, backgroundColor: globalWindow.backgroundColor!,
                                      buttonColorIndex: 1, collectionViewLayout: incomeAndExpensesVCLayout)
 
 let zeroFrame = CGRect(x: 0, y: 0, width: 0, height: 0) /// initial value for testing

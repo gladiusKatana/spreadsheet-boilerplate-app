@@ -12,7 +12,7 @@ var secondLayout =
         squareCellMode: .noAutoSquare,
         loadsHorizontally: false)
 
-var secondVC = CollectionVC(.secondVCType, backgroundColor: globalWindow.backgroundColor!,
+var secondVC = CollectionVC(.secondVCType, populateStockCellData: true, backgroundColor: globalWindow.backgroundColor!,
                                       buttonColorIndex: 0, collectionViewLayout: secondLayout)
 
 enum CollectionViewType: Int {

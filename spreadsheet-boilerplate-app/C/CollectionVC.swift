@@ -1,10 +1,9 @@
 import UIKit // CollectionVC.swift    ･     spreadsheet-boilerplate-app     ･     created by Garth Snyder
 
 class CollectionVC: UICollectionViewController, UITextFieldDelegate, UIGestureRecognizerDelegate {
-    
-    var viewControllerType = CollectionViewType.firstVCType;    var balanceSums : [Double] = []
-    var customFlowLayout: CustomFlowLayout?;                    var buttonColorIndex: Int?
-    var showLoadAndAppearIndicationInConsole = false;           var backgroundColor = UIColor.clear
+    var viewControllerType = CollectionViewType.firstVCType; var populateStockCellData = false;  var balanceSums : [Double] = []
+    var customFlowLayout: CustomFlowLayout?;                 var buttonColorIndex: Int?
+    var showLoadAndAppearIndicationInConsole = false;        var backgroundColor = UIColor.clear
     
     lazy var textField: UITextField = {
         let textField = UITextField(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
@@ -19,10 +18,11 @@ class CollectionVC: UICollectionViewController, UITextFieldDelegate, UIGestureRe
         return textField
     }()
     
-    init(_ vcType: CollectionViewType, backgroundColor: UIColor,
+    init(_ vcType: CollectionViewType, populateStockCellData: Bool, backgroundColor: UIColor,
          buttonColorIndex: Int?, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(collectionViewLayout: layout)
         self.viewControllerType = vcType
+        self.populateStockCellData = populateStockCellData
         self.backgroundColor = backgroundColor
         self.buttonColorIndex = buttonColorIndex
         self.customFlowLayout = layout as? CustomFlowLayout
