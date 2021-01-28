@@ -26,9 +26,6 @@ extension CollectionVC {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        ///reloadLock = false
-        ///reloadCV()
-        
         //addPopupCollectionView()  /// implemented here for experimental purposes only
     }
 }
