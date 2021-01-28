@@ -11,7 +11,6 @@ extension CollectionVC {
         let headerColumns = layout.lockedHeaderSections
         
         setCellColors(cell, layout: layout, row: row, column: column, headerRows: headerRows, headerColumns: headerColumns)
-        
         setCellText(cell, layout: layout, row: row, column: column, headerRows: headerRows, headerColumns: headerColumns)
         
         return cell
@@ -31,10 +30,13 @@ extension CollectionVC {
                 cell.backgroundColor = tappedCellColor
             }
             else {
-                cell.backgroundColor = cellDefaultColor; cell.cellColor = cellDefaultColor
+                if alternatingColors && row % 2 != 0 && column % 2 != 0 {
+                    cell.backgroundColor = .white; cell.cellColor = .white;  cell.titleLabel.textColor = .black
+                } else {
+                    cell.backgroundColor = cellDefaultColor; cell.cellColor = cellDefaultColor
+                }
             }
         }
     }
-    
 }
 
